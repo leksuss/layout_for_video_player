@@ -1,12 +1,39 @@
 <html>
     <head>
         <script src="https://use.fontawesome.com/09d94b868c.js"></script>
+        <style type="text/css">
+            .bottom-controls{
+                background-color: black;
+            }
+            .bottom-controls .player-button{
+              cursor: pointer;
+              color: white;
+              padding: 10px;
+            }
+            .bottom-controls .play {
+                background-color: transparent;
+            }
+        </style>
     </head>
     <body>
         <div id="player" style="width: 800px; height: 600px;">
-            <div class="js-video-container" style="width: 100%; height: 100%"></div>
-            <button class="js-play-button" hidden><i class="fa fa-play" aria-hidden="true"></i></button>
+          <div class="js-video-container" style="width: 100%; height: 100%"></div>
+          <div class="bottom-controls">
+            <div class="left-buttons">
+              <div class="js-play-button player-button play"><i class="fa fa-play" aria-hidden="true"></i></div>
+              <div class="player-button volume"></div>
+            </div>
+            <div class="viewing-panel">
+              <div class="viewing-time"></div>
+              <div class="viewing-progressbar"></div>
+              <div class="video-duration"></div>
+            </div>
+            <div class="right-buttons">
+              <div class="player-button fullscreen"></div>
+            </div>
+          </div>
         </div>
+
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
