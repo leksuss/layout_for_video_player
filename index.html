@@ -8,10 +8,14 @@
             .bottom-controls .player-button{
               cursor: pointer;
               color: white;
-              padding: 10px;
+              background-color: transparent;
+              width: 30px;
+              height: 30px;
+              border: None;
+              text-align:center;
             }
             .bottom-controls .play {
-                background-color: transparent;
+
             }
         </style>
     </head>
@@ -20,9 +24,11 @@
           <div class="js-video-container" style="width: 100%; height: 100%"></div>
           <div class="bottom-controls">
             <div class="left-buttons">
-              <div class="js-play-button player-button play"><i class="fa fa-play" aria-hidden="true"></i></div>
-              <div class="player-button volume"></div>
+              <button class="js-play-button player-button play" hidden><i class="fa fa-play"></i></button>
+              <button class="js-pause-button player-button pause" hidden><i class="fa fa-pause"></i></button>
+              <!--<div class="player-button volume"></div> -->
             </div>
+              <!--
             <div class="viewing-panel">
               <div class="viewing-time"></div>
               <div class="viewing-progressbar"></div>
@@ -31,6 +37,7 @@
             <div class="right-buttons">
               <div class="player-button fullscreen"></div>
             </div>
+            -->
           </div>
         </div>
 
